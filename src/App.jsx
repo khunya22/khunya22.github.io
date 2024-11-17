@@ -18,10 +18,8 @@ const Container = styled('div', {
 function App() {
   const [count, setCount] = useState(0)
 	return (
-    		<Container>
-      			<h1>Welcome to My Stitches Site!</h1>
-    		</Container>
-  		);
+    		<Portfolio />;
+	)
   }
 
 export default App
