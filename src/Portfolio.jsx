@@ -34,14 +34,33 @@ const Button = styled('a', {
   },
 });
 
+const ContactLinks = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.5rem',
+});
+
+const ContactLink = styled('a', {
+  color: '$primary',
+  textDecoration: 'none',
+  fontSize: '1rem',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+});
+
 export default function Portfolio() {
   return (
     <Container>
-      <Header>My Portfolio</Header>
+      <Header>Welcome!</Header>
 
       <Section>
         <h2>Introduction</h2>
-        <p>Hello! I'm a developer with experience in front-end and back-end development. Below are some of the projects I've worked on.</p>
+        <p>
+          Hello! My name is Kevin and I am an aspiring web and security
+          developer. Here lies a list of my projects ranging from
+          programming-based to personal homelab work.
+        </p>
       </Section>
 
       <Section>
@@ -49,7 +68,10 @@ export default function Portfolio() {
         <ProjectCard>
           <h3>Project 1</h3>
           <p>A brief description of the project.</p>
-          <Button href="https://github.com/yourusername/project1" target="_blank">
+          <Button
+            href="https://github.com/yourusername/project1"
+            target="_blank"
+          >
             View on GitHub
           </Button>
         </ProjectCard>
@@ -57,7 +79,10 @@ export default function Portfolio() {
         <ProjectCard>
           <h3>Project 2</h3>
           <p>A brief description of the project.</p>
-          <Button href="https://github.com/yourusername/project2" target="_blank">
+          <Button
+            href="https://github.com/yourusername/project2"
+            target="_blank"
+          >
             View on GitHub
           </Button>
         </ProjectCard>
@@ -65,7 +90,24 @@ export default function Portfolio() {
 
       <Section>
         <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>Connect with me via the following platforms:</p>
+        <ContactLinks>
+          <ContactLink href="mailto:khunya22@proton.me" target="_blank">
+            📧 Email
+          </ContactLink>
+          <ContactLink
+            href="https://www.linkedin.com/in/yourlinkedinusername"
+            target="_blank"
+          >
+            🔗 LinkedIn
+          </ContactLink>
+          <ContactLink href="https://github.com/yourgithubusername" target="_blank">
+            💻 GitHub
+          </ContactLink>
+          <ContactLink href="https://www.instagram.com/yourinstagramusername" target="_blank">
+            📸 Instagram
+          </ContactLink>
+        </ContactLinks>
       </Section>
     </Container>
   );
