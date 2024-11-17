@@ -55,7 +55,7 @@ export default function Portfolio() {
       <Header>Welcome!</Header>
 
       <Section>
-        <h2>Introduction</h2>
+        
         <p>
           Hello! My name is Kevin and I am an aspiring web and security
           developer. Here lies a list of my projects ranging from
@@ -67,7 +67,7 @@ export default function Portfolio() {
         <h2>Projects</h2>
         <ProjectCard>
           <h3>Project 1</h3>
-          <p>A brief description of the project.</p>
+          <p>brief</p>
           <Button
             href="https://github.com/yourusername/project1"
             target="_blank"
@@ -78,9 +78,31 @@ export default function Portfolio() {
 
         <ProjectCard>
           <h3>Project 2</h3>
-          <p>A brief description of the project.</p>
+          <p>brief</p>
           <Button
             href="https://github.com/yourusername/project2"
+            target="_blank"
+          >
+            View on GitHub
+          </Button>
+        </ProjectCard>
+
+        <ProjectCard>
+          <h3>Project 3</h3>
+          <p>brief</p>
+          <Button
+            href="https://github.com/yourusername/project3"
+            target="_blank"
+          >
+            View on GitHub
+          </Button>
+        </ProjectCard>
+
+        <ProjectCard>
+          <h3>Project 4</h3>
+          <p>brief</p>
+          <Button
+            href="https://github.com/yourusername/project4"
             target="_blank"
           >
             View on GitHub
@@ -101,10 +123,16 @@ export default function Portfolio() {
           >
             🔗 LinkedIn
           </ContactLink>
-          <ContactLink href="https://github.com/yourgithubusername" target="_blank">
+          <ContactLink
+            href="https://github.com/yourgithubusername"
+            target="_blank"
+          >
             💻 GitHub
           </ContactLink>
-          <ContactLink href="https://www.instagram.com/yourinstagramusername" target="_blank">
+          <ContactLink
+            href="https://www.instagram.com/yourinstagramusername"
+            target="_blank"
+          >
             📸 Instagram
           </ContactLink>
         </ContactLinks>
